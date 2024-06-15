@@ -1,4 +1,3 @@
-// components/TrendLine.js
 import React from 'react';
 import { Line } from 'react-chartjs-2';
 import {
@@ -32,17 +31,16 @@ const TrendLine = ({ issues, selectedIssue }) => {
             return {};
         }
 
-        // Example logic to generate chart data
         const data = {
             labels: issues.map(issue => new Date(issue.created_at).toLocaleDateString()),
             datasets: [
                 {
                     label: selectedIssue.title,
-                    data: issues.map(issue => issue.priority === selectedIssue.priority ? 1 : 0), // Example logic, adjust accordingly
+                    data: issues.map(issue => issue.priority === selectedIssue.priority ? 1 : 0),
                     borderColor: 'rgba(75, 192, 192, 1)',
                     backgroundColor: 'rgba(75, 192, 192, 0.2)',
-                    borderWidth: 1, // Adjust the line thickness here
-                    pointRadius: 2, // Adjust the point size here
+                    borderWidth: 1,
+                    pointRadius: 2,
                 },
             ],
         };
@@ -54,7 +52,7 @@ const TrendLine = ({ issues, selectedIssue }) => {
 
     const chartOptions = {
         responsive: true,
-        maintainAspectRatio: false, // This option allows custom height/width
+        maintainAspectRatio: false,
         plugins: {
             legend: {
                 display: true,
@@ -67,7 +65,7 @@ const TrendLine = ({ issues, selectedIssue }) => {
         },
         elements: {
             line: {
-                tension: 0.4, // Smoother line
+                tension: 0.4,
             },
         },
         scales: {
@@ -90,7 +88,7 @@ const TrendLine = ({ issues, selectedIssue }) => {
     };
 
     return (
-        <div style={{ width: '800px', height: '400px' }}> {/* Adjust the width and height as needed */}
+        <div style={{ width: '800px', height: '400px' }}>
             <Line data={chartData} options={chartOptions} />
         </div>
     );

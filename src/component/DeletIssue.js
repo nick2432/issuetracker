@@ -4,8 +4,8 @@ import { deleteIssue } from '../action/issueActions';
 
 const DeleteIssue = ({ issueId, deleteIssue, onClose }) => {
     const handleDelete = () => {
-        deleteIssue(issueId);  // Dispatch delete action
-        onClose();  // Close the modal
+        deleteIssue(issueId);  
+        onClose(); 
     };
 
     return (

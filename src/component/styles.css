@@ -1,7 +1,7 @@
-/* Overall container and styling */
+
 .filter-sort-container {
     display: flex;
-    flex-wrap: wrap; /* Allow wrapping for responsiveness */
+    flex-wrap: wrap; 
     justify-content: space-between;
     align-items: center;
     padding: 7px;
@@ -14,8 +14,8 @@
 
 .filter-sort {
     display: flex;
-    flex-wrap: wrap; /* Allow wrapping for responsiveness */
-    gap: 20px; /* Adjust gap for responsiveness */
+    flex-wrap: wrap; 
+    gap: 20px; 
 }
 
 .dropdown-container {
@@ -68,7 +68,7 @@
     padding: 12px 16px;
     font-weight: bold;
     background-color: #333;
-    color: white; /* Change the dropdown header color to white */
+    color: white; 
 }
 
 .dropdown-content .selected {
@@ -76,7 +76,7 @@
     font-weight: bold;
 }
 
-/* Table styling */
+
 .table {
     width: 100%;
     border-collapse: collapse;
@@ -157,7 +157,7 @@
     font-size: 1.2em;
     font-weight: bold;
     margin-bottom: 5px;
-    color: white; /* Change the issue title color to white */
+    color: white; 
 }
 
 .issue-priority {
@@ -172,7 +172,7 @@
 
 .issue-tags {
     display: flex;
-    flex-wrap: wrap; /* Allow wrapping for responsiveness */
+    flex-wrap: wrap;
 }
 
 .issue-tag {
@@ -180,11 +180,11 @@
     border-radius: 3px;
     padding: 2px 5px;
     margin-right: 5px;
-    cursor: pointer; /* Add cursor pointer */
+    cursor: pointer; 
 }
 
 .issue-tag:hover {
-    background-color: #777; /* Hover effect */
+    background-color: #777; 
 }
 
 .issue-meta {
@@ -254,7 +254,7 @@
     background-color: #555;
 }
 
-/* Edit and delete buttons */
+
 .issue-actions {
     display: flex;
     gap: 10px;

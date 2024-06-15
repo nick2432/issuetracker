@@ -1,4 +1,4 @@
-/* Edit issue container */
+
 .edit-issue-container {
     background-color: #2d2d2d;
     border: 0.1px solid rgb(83, 82, 82);
@@ -15,7 +15,7 @@
     margin-bottom: 20px;
 }
 
-/* Form styling */
+
 .edit-issue-form {
     display: flex;
     flex-direction: column;

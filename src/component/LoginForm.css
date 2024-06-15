@@ -1,4 +1,3 @@
-/* Set up the overall container and layout */
 body, html {
     margin: 0;
     padding: 0;
@@ -8,175 +7,156 @@ body, html {
     font-family: Arial, sans-serif;
 }
 
-/* Main container for the split layout */
 .main-container {
     display: flex;
     height: 100vh;
     width: 100vw;
 }
 
-/* Left side of the screen with welcoming text */
 .left-side {
-    flex: 1; /* Takes 50% of the width */
+    flex: 1;
     display: flex;
     align-items: center;
     justify-content: center;
     background: linear-gradient(135deg, #2d2d2d, #2d2d2d);
     color: #ffffff;
-    padding: 40px; /* Increased padding */
+    padding: 40px;
     text-align: center;
     position: relative;
 }
 
-/* Right side of the screen for the login card */
 .right-side {
-    flex: 1; /* Takes 50% of the width */
+    flex: 1;
     display: flex;
-    padding: 40px; /* Increased padding */
+    padding: 40px;
     align-items: center;
     justify-content: center;
     background-color: #f7f7f7;
 }
 
-/* Style for the welcoming text */
 .welcome-text {
     max-width: 80%;
-    font-size: 24px; /* Increased font size */
+    font-size: 24px;
 }
 
-/* Style the login container */
 .login-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: white;
-    padding: 60px 40px; /* Increased padding */
-    border-radius: 20px; /* Slightly more rounded corners */
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2); /* Increased shadow for better separation */
-    width: 480px; /* Increased width */
+    padding: 60px 40px;
+    border-radius: 20px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    width: 480px;
     text-align: center;
 }
 
-/* Center the heading */
 .login-container h2 {
     margin-top: 0;
-    margin-bottom: 30px; /* Increased margin */
-    font-size: 28px; /* Increased font size */
+    margin-bottom: 30px;
+    font-size: 28px;
 }
 
-/* Flexbox for the form */
 .login-container form {
     display: flex;
     flex-direction: column;
 }
 
-/* Style form divs */
 .input-container {
-    margin-bottom: 30px; /* Increased margin */
+    margin-bottom: 30px;
 }
 
-/* Remove labels */
 .login-container label {
     display: none;
 }
 
-/* Style inputs */
-/* Style inputs */
 .login-container input {
-    padding: 16px; /* Increased padding */
-    border: none; /* Remove default border */
-    border-bottom: 2px solid #2d2d2d; /* Only bottom border */
+    padding: 16px;
+    border: none;
+    border-bottom: 2px solid #2d2d2d;
     width: 450px;
-    font-size: 18px; /* Increased font size */
-    box-sizing: border-box; /* Ensure padding is included in width calculation */
+    font-size: 18px;
+    box-sizing: border-box;
 }
 
-/* Hover effect for bottom border */
 .login-container input:hover {
-    border-bottom: 2px solid #2d2d2d; /* Adjust color for hover effect */
+    border-bottom: 2px solid #2d2d2d;
 }
 
-/* Focus effect for bottom border */
 .login-container input:focus {
-    outline: none; /* Remove default focus outline */
-    border-bottom: 2px solid #363535; /* Adjust color for focus effect */
+    outline: none;
+    border-bottom: 2px solid #363535;
 }
 
-
-/* Style button */
 .login-container button {
     background-color: #2d2d2d;
     color: rgb(255, 255, 255);
-    padding: 16px; /* Increased padding */
+    padding: 16px;
     border: none;
-    border-radius: 6px; /* Slightly more rounded corners */
+    border-radius: 6px;
     cursor: pointer;
-    font-size: 18px; /* Increased font size */
+    font-size: 18px;
     width: 100%;
-    box-sizing: border-box; /* Ensure padding is included in width calculation */
+    box-sizing: border-box;
 }
 
-/* Hover effect for button */
 .login-container button:hover {
     background-color: #474646;
 }
 
-/* Center paragraph */
 .login-container p {
     text-align: center;
-    margin-top: 20px; /* Increased margin */
-    font-size: 16px; /* Increased font size */
+    margin-top: 20px;
+    font-size: 16px;
 }
 
-/* Responsive Design */
 @media (max-width: 935px) {
     .main-container {
         flex-direction: column;
     }
     .left-side, .right-side {
         height: auto;
-        padding: 40px; /* Ensuring padding is maintained */
+        padding: 40px;
     }
     .left-side::before {
         width: 100%;
         height: 50%;
     }
     .login-container {
-        width: 100%; /* Full width on smaller screens */
-        padding: 40px; /* Adjusted padding */
-        border-radius: 0; /* Remove rounded corners */
-        box-shadow: none; /* Remove shadow */
+        width: 100%;
+        padding: 40px;
+        border-radius: 0;
+        box-shadow: none;
     }
     .login-container h2 {
-        font-size: 24px; /* Adjusted font size */
+        font-size: 24px;
     }
     .login-container input, .login-container button {
-        padding: 14px; /* Adjusted padding */
-        font-size: 16px; /* Adjusted font size */
-        width: 100%; /* Full width for inputs and buttons on smaller screens */
+        padding: 14px;
+        font-size: 16px;
+        width: 100%;
     }
     .login-container p {
-        margin-top: 16px; /* Adjusted margin */
-        font-size: 14px; /* Adjusted font size */
+        margin-top: 16px;
+        font-size: 14px;
     }
 }
 
-/* Media Query for 400px Width */
 @media (max-width: 400px) {
     .login-container {
-        padding: 20px; /* Adjusted padding for smaller screens */
+        padding: 20px;
     }
     .login-container h2 {
-        font-size: 20px; /* Decreased font size */
+        font-size: 20px;
     }
     .login-container input, .login-container button {
-        padding: 12px; /* Decreased padding */
-        font-size: 14px; /* Decreased font size */
-        width: 100%; /* Full width for inputs and buttons on smaller screens */
+        padding: 12px;
+        font-size: 14px;
+        width: 100%;
     }
     .login-container p {
-        margin-top: 12px; /* Decreased margin */
-        font-size: 12px; /* Decreased font size */
+        margin-top: 12px;
+        font-size: 12px;
     }
 }
