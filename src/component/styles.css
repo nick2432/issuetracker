@@ -1,0 +1,283 @@
+/* Overall container and styling */
+.filter-sort-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping for responsiveness */
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px;
+    background-color: #292828;
+    border-top: 0.1px solid rgb(83, 82, 82);
+    border-left: 0.1px solid rgb(83, 82, 82);
+    border-right: 0.1px solid rgb(83, 82, 82);
+    border-radius: 10px;
+}
+
+.filter-sort {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping for responsiveness */
+    gap: 20px; /* Adjust gap for responsiveness */
+}
+
+.dropdown-container {
+    position: relative;
+    cursor: pointer;
+}
+
+.dropdown-label {
+    color: #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dropdown-label::after {
+    content: ' ▼';
+    margin-left: 5px;
+    font-size: 0.8em;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    background-color: #585858;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    width: 200px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.dropdown-content.show {
+    display: block;
+}
+
+.dropdown-content a {
+    color: #ccc;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #383838;
+}
+
+.dropdown-header {
+    padding: 12px 16px;
+    font-weight: bold;
+    background-color: #333;
+    color: white; /* Change the dropdown header color to white */
+}
+
+.dropdown-content .selected {
+    color: white;
+    font-weight: bold;
+}
+
+/* Table styling */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    color: #ccc;
+    margin-top: 20px;
+}
+
+.table th, .table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #444;
+    border: 1px solid #5A5A5A;
+    background-color: #2d2d2d;
+}
+
+.table th {
+    background-color: #333;
+    color: #fff;
+}
+
+.table td {
+    background-color: #2d2d2d;
+    transition: background-color 0.3s ease;
+}
+
+.table tr:hover td {
+    background-color: #383838;
+}
+
+.back {
+    background-color: #2d2d2d;
+    padding: 20px;
+    height: 100vh;
+}
+
+.issue-list {
+    display: flex;
+    flex-direction: column;
+    background-color: #2d2d2d;
+    border: 0.1px solid rgb(83, 82, 82);
+    border-radius: 10px;
+}
+
+.issue-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.issue-item {
+    background-color: #2d2d2d;
+    color: #eee;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+    border-top: 0.1px solid rgb(83, 82, 82);
+    border-bottom: 0.1px solid rgb(83, 82, 82);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.issue-item:hover {
+    background-color: #383838;
+}
+
+.issue-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.issue-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.issue-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: white; /* Change the issue title color to white */
+}
+
+.issue-priority {
+    color: orange;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+
+.issue-priority:hover {
+    color: darkorange;
+}
+
+.issue-tags {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping for responsiveness */
+}
+
+.issue-tag {
+    background-color: #555;
+    border-radius: 3px;
+    padding: 2px 5px;
+    margin-right: 5px;
+    cursor: pointer; /* Add cursor pointer */
+}
+
+.issue-tag:hover {
+    background-color: #777; /* Hover effect */
+}
+
+.issue-meta {
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: #bbb;
+}
+
+.issue-detail {
+    background-color: #2d2d2d;
+    border: 1px solid #444;
+    border-radius: 5px;
+    padding: 20px;
+    color: #eee;
+    margin-top: 20px;
+}
+
+.new-issue-button {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    height: 50%;
+    margin: 10px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.new-issue-button:hover {
+    background-color: #218838;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.pagination-list {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+.pagination-item {
+    cursor: pointer;
+}
+
+.pagination-link {
+    color: #ccc;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    background-color: #444;
+}
+
+.pagination-item.active .pagination-link {
+    background-color: #28a745;
+    color: #fff;
+}
+
+.pagination-link:hover {
+    background-color: #555;
+}
+
+/* Edit and delete buttons */
+.issue-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.issue-action-button {
+    background-color: #444;
+    color: #ccc;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.issue-action-button:hover {
+    background-color: #555;
+}
+
+.issue-action-button.delete {
+    background-color: #d9534f;
+    color: white;
+}
+
+.issue-action-button.delete:hover {
+    background-color: #c9302c;
+}

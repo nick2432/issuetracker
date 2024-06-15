@@ -1,0 +1,264 @@
+[
+    {
+        "id": 1,
+        "title": "Fix nav bar item alignments and truncation",
+        "description": "Adjust nav bar items to align properly and prevent truncation.",
+        "priority": "P1 - important",
+        "status": "Open",
+        "assignee": "marcellamaki",
+        "reporter": "john_doe",
+        "created_at": "2024-06-14T08:30:00Z",
+        "updated_at": "2024-06-14T09:00:00Z",
+        "due_date": "2024-06-20T23:59:59Z",
+        "comments": [
+            {
+                "author": "john_doe",
+                "text": "This needs to be fixed ASAP.",
+                "timestamp": "2024-06-14T09:10:00Z"
+            },
+            {
+                "author": "marcellamaki",
+                "text": "Working on it.",
+                "timestamp": "2024-06-14T10:00:00Z"
+            }
+        ],
+        "attachments": ["screenshot1.png"],
+        "tags": ["regression"],
+        "type": "bug"
+    },
+    {
+        "id": 2,
+        "title": "Improve card layout alignments/prevent overlapping text",
+        "description": "Ensure card layout is responsive and text does not overlap.",
+        "priority": "P0 - critical",
+        "status": "Open",
+        "assignee": "marcellamaki",
+        "reporter": "jane_doe",
+        "created_at": "2024-06-14T05:00:00Z",
+        "updated_at": "2024-06-14T06:00:00Z",
+        "due_date": "2024-06-19T23:59:59Z",
+        "comments": [
+            {
+                "author": "jane_doe",
+                "text": "This issue is causing major layout problems.",
+                "timestamp": "2024-06-14T06:15:00Z"
+            }
+        ],
+        "attachments": [],
+        "tags": [],
+        "type": "bug"
+    },
+    {
+        "id": 3,
+        "title": "String changes to consider",
+        "description": "Review and update user-facing strings for clarity.",
+        "priority": "P0 - critical",
+        "status": "Open",
+        "assignee": "nucleogenesis",
+        "reporter": "alex_smith",
+        "created_at": "2024-06-12T08:00:00Z",
+        "updated_at": "2024-06-12T10:00:00Z",
+        "due_date": "2024-06-18T23:59:59Z",
+        "comments": [
+            {
+                "author": "alex_smith",
+                "text": "Some strings are confusing to users.",
+                "timestamp": "2024-06-12T10:10:00Z"
+            }
+        ],
+        "attachments": [],
+        "tags": ["user strings"],
+        "type": "enhancement"
+    },
+    {
+        "id": 4,
+        "title": "Update NetworkClient to set Accept header to application/json",
+        "description": "Modify NetworkClient to correctly set Accept header.",
+        "priority": "P2 - medium",
+        "status": "Open",
+        "assignee": "rtibbles",
+        "reporter": "john_doe",
+        "created_at": "2024-06-11T07:00:00Z",
+        "updated_at": "2024-06-11T09:00:00Z",
+        "due_date": "2024-06-17T23:59:59Z",
+        "comments": [
+            {
+                "author": "john_doe",
+                "text": "This is a minor issue but needs to be fixed for consistency.",
+                "timestamp": "2024-06-11T09:10:00Z"
+            }
+        ],
+        "attachments": [],
+        "tags": [],
+        "type": "bug"
+    },
+    {
+        "id": 5,
+        "title": "Update NetworkClient to set Accept header to application/json",
+        "description": "Modify NetworkClient to correctly set Accept header.",
+        "priority": "P2 - medium",
+        "status": "Open",
+        "assignee": "rtibbles",
+        "reporter": "john_doe",
+        "created_at": "2024-06-11T07:00:00Z",
+        "updated_at": "2024-06-11T09:00:00Z",
+        "due_date": "2024-06-17T23:59:59Z",
+        "comments": [
+            {
+                "author": "john_doe",
+                "text": "This is a minor issue but needs to be fixed for consistency.",
+                "timestamp": "2024-06-11T09:10:00Z"
+            }
+        ],
+        "attachments": [],
+        "tags": [],
+        "type": "bug"
+    },
+    {
+        "id": 6,
+        "title": "Update NetworkClient to set Accept header to application/json",
+        "description": "Modify NetworkClient to correctly set Accept header.",
+        "priority": "P2 - medium",
+        "status": "Open",
+        "assignee": "rtibbles",
+        "reporter": "john_doe",
+        "created_at": "2024-06-11T07:00:00Z",
+        "updated_at": "2024-06-11T09:00:00Z",
+        "due_date": "2024-06-17T23:59:59Z",
+        "comments": [
+            {
+                "author": "john_doe",
+                "text": "This is a minor issue but needs to be fixed for consistency.",
+                "timestamp": "2024-06-11T09:10:00Z"
+            }
+        ],
+        "attachments": [],
+        "tags": [],
+        "type": "bug"
+    },
+    {
+        "id": 7,
+        "title": "Update NetworkClient to set Accept header to application/json",
+        "description": "Modify NetworkClient to correctly set Accept header.",
+        "priority": "P2 - medium",
+        "status": "Open",
+        "assignee": "rtibbles",
+        "reporter": "john_doe",
+        "created_at": "2024-06-11T07:00:00Z",
+        "updated_at": "2024-06-11T09:00:00Z",
+        "due_date": "2024-06-17T23:59:59Z",
+        "comments": [
+            {
+                "author": "john_doe",
+                "text": "This is a minor issue but needs to be fixed for consistency.",
+                "timestamp": "2024-06-11T09:10:00Z"
+            }
+        ],
+        "attachments": [],
+        "tags": [],
+        "type": "bug"
+    },
+    {
+        "id": 8,
+        "title": "Update NetworkClient to set Accept header to application/json",
+        "description": "Modify NetworkClient to correctly set Accept header.",
+        "priority": "P2 - medium",
+        "status": "Open",
+        "assignee": "rtibbles",
+        "reporter": "john_doe",
+        "created_at": "2024-06-11T07:00:00Z",
+        "updated_at": "2024-06-11T09:00:00Z",
+        "due_date": "2024-06-17T23:59:59Z",
+        "comments": [
+            {
+                "author": "john_doe",
+                "text": "This is a minor issue but needs to be fixed for consistency.",
+                "timestamp": "2024-06-11T09:10:00Z"
+            }
+        ],
+        "attachments": [],
+        "tags": [],
+        "type": "bug"
+    },
+    {
+        "id": 1,
+        "title": "Fix nav bar item alignments and truncation",
+        "description": "Adjust nav bar items to align properly and prevent truncation.",
+        "priority": "P1 - important",
+        "status": "Open",
+        "assignee": "marcellamaki",
+        "reporter": "john_doe",
+        "created_at": "2024-06-14T08:30:00Z",
+        "updated_at": "2024-06-14T09:00:00Z",
+        "due_date": "2024-06-20T23:59:59Z",
+        "comments": [
+            {
+                "author": "john_doe",
+                "text": "This needs to be fixed ASAP.",
+                "timestamp": "2024-06-14T09:10:00Z"
+            },
+            {
+                "author": "marcellamaki",
+                "text": "Working on it.",
+                "timestamp": "2024-06-14T10:00:00Z"
+            }
+        ],
+        "attachments": ["screenshot1.png"],
+        "tags": ["regression"],
+        "type": "bug"
+    },
+    {
+        "id": 1,
+        "title": "Fix nav bar item alignments and truncation",
+        "description": "Adjust nav bar items to align properly and prevent truncation.",
+        "priority": "P1 - important",
+        "status": "Open",
+        "assignee": "marcellamaki",
+        "reporter": "john_doe",
+        "created_at": "2024-06-14T08:30:00Z",
+        "updated_at": "2024-06-14T09:00:00Z",
+        "due_date": "2024-06-20T23:59:59Z",
+        "comments": [
+            {
+                "author": "john_doe",
+                "text": "This needs to be fixed ASAP.",
+                "timestamp": "2024-06-14T09:10:00Z"
+            },
+            {
+                "author": "marcellamaki",
+                "text": "Working on it.",
+                "timestamp": "2024-06-14T10:00:00Z"
+            }
+        ],
+        "attachments": ["screenshot1.png"],
+        "tags": ["regression"],
+        "type": "bug"
+    },
+    {
+        "id": 1,
+        "title": "Fix nav bar item alignments and truncation",
+        "description": "Adjust nav bar items to align properly and prevent truncation.",
+        "priority": "P1 - important",
+        "status": "Open",
+        "assignee": "marcellamaki",
+        "reporter": "john_doe",
+        "created_at": "2024-06-14T08:30:00Z",
+        "updated_at": "2024-06-14T09:00:00Z",
+        "due_date": "2024-06-20T23:59:59Z",
+        "comments": [
+            {
+                "author": "john_doe",
+                "text": "This needs to be fixed ASAP.",
+                "timestamp": "2024-06-14T09:10:00Z"
+            },
+            {
+                "author": "marcellamaki",
+                "text": "Working on it.",
+                "timestamp": "2024-06-14T10:00:00Z"
+            }
+        ],
+        "attachments": ["screenshot1.png"],
+        "tags": ["regression"],
+        "type": "bug"
+    }
+]
